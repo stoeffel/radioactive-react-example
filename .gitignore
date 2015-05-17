@@ -1,0 +1,5 @@
+node_modules
+.module-cache
+npm-debug.log
+npm-debug.log.*
+src/*.js

@@ -1,0 +1,27 @@
+{
+  "name": "radioactive-react-example",
+  "version": "1.0.0",
+  "description": "> See Pokémon chars as you type.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jsx": "jsx src src -x jsx --harmony",
+    "browserify": "browserify src/app.js > bundle.js",
+    "sass": "node-sass styles/sass/materialize.scss styles/css/materialize.css",
+    "build": "npm run jsx; npm run browserify",
+    "develop": "watch 'npm run build' src"
+  },
+  "author": "schtoeffel",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^10.2.0",
+    "materialize-css": "^0.96.1",
+    "radioactive": "^1.6.0",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "node-sass": "^3.1.1",
+    "react-tools": "^0.13.3",
+    "watch": "^0.16.0"
+  }
+}
