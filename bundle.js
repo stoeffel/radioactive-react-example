@@ -21669,6 +21669,7 @@ var App = createClass({
       me.setState({
         focusedHero: results[0],
         characters: results,
+        activeNr: 0,
         showLoader: false
       });
     });
