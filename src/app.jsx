@@ -4,7 +4,6 @@ var SearchBar = require('./searchBar');
 var Footer = require('./footer');
 var HeroCard = require('./heroCard');
 var HeroList = require('./heroList');
-var Loader = require('./loader');
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
@@ -101,8 +100,7 @@ var App = createClass({
     return (
       <div>
         <header className="navbar-fixed">
-          <Loader show={this.state.showLoader} />
-          <SearchBar search={this.onSearch} initialSearch={INITIAL_SEARCH}/>
+          <SearchBar showLoader={this.state.showLoader} search={this.onSearch} initialSearch={INITIAL_SEARCH}/>
         </header>
 
         <main>
